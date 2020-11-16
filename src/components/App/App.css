@@ -1,0 +1,63 @@
+body {
+    
+
+    background: linear-gradient(-45deg, #fadd3c, #e73c7e, #ad63eb, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;   
+}
+
+a{
+color: white;
+}
+
+a:after{
+color: white;
+}
+
+@-webkit-keyframes bg {
+0%, 100% {
+background-color: #1e90ff;
+}
+25% {
+background-color: #39d24a;
+}
+50% {
+background-color: #ffe244;
+}
+75% {
+background-color: #ff36a3;
+}
+}
+
+@keyframes bg {
+0%, 100% {
+background-color: #1e90ff;
+}
+25% {
+background-color: #39d24a;
+}
+50% {
+background-color: #ffe244;
+}
+75% {
+background-color: #ff36a3;
+}
+}
+
+main{
+margin-left: auto;
+margin-right: auto;
+
+}
+
+.LoginRoute{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.LoginRoute h2, .LoginRoute p{
+margin-left: 5%;
+margin-right: 5%;
+text-align: center;
+}

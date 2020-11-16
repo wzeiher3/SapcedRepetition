@@ -1,0 +1,83 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logout{
+    text-align: center;
+}
+
+.user{
+    font-size: 1.6em;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+#title-icon {
+    font-size: 3rem;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    transition: .1s ease-in;
+    color: #a1a1a1;
+}
+
+.header-username {
+    float: left;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.header-username i {
+    padding-right: 5px;
+}
+
+.header-link {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .header-username {
+        margin-left: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .header-username {
+        margin-left: 50px;
+    }
+}
