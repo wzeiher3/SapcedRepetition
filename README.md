@@ -6,12 +6,12 @@ Language Learner is a language learning application that assists users in learni
 
 ### Live Link
 
-The live site can be accessed at []
+The live site can be accessed at [https://language-learner.vercel.app/]
 
 
 ## Server
 
-This app is meant to run with [].
+This app is meant to run with [https://floating-basin-72537.herokuapp.com].
 
 Please look at the README.md for more information on utilizing the server.
 
