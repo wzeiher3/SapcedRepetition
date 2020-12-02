@@ -17,21 +17,44 @@ class RegistrationForm extends Component {
   handleSubmit = ev => {
     ev.preventDefault()
     const { name, username, password } = ev.target
+    console.log(name.value, username.value, password.value)
     AuthApiService.postUser({
       name: name.value,
       username: username.value,
       password: password.value,
     })
       .then(user => {
+        
+        this.props.onRegistrationSuccess(username.value, password.value)
         name.value = ''
         username.value = ''
         password.value = ''
-        this.props.onRegistrationSuccess()
+        
+        // this.props.onRegistrationSuccess()
       })
       .catch(res => {
         this.setState({ error: res.error })
       })
+
   }
+
+  // handleLogIn = (username, password) => {
+  //   this.setState({ error: null })
+
+  //   AuthApiService.postLogin({
+  //     username: username.value,
+  //     password: password.value,
+  //   })
+  //     .then(res => {
+  //       username.value = ''
+  //       password.value = ''
+  //       this.context.processLogin(res.authToken)
+  //       this.props.onLoginSuccess()
+  //     })
+  //     .catch(res => {
+  //       this.setState({ error: res.error })
+  //     })
+  // }
 
   componentDidMount() {
     this.firstInput.current.focus()
@@ -44,7 +67,7 @@ class RegistrationForm extends Component {
         onSubmit={this.handleSubmit}
       >
         <div role='alert'>
-          {error && <p>{error}</p>}
+          {error && <p id="errorAlert">{error}</p>}
         </div>
         <div className='LoginItem center'>
           <Label htmlFor='registration-name-input'>

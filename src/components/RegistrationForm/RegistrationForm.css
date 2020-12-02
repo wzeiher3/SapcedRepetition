@@ -12,6 +12,10 @@ footer {
     margin-right: auto;
 }
 
+#errorAlert{
+    color:orange;
+}
+
 .main-form {
     width: 80%;
     padding: 20px;
@@ -122,3 +126,4 @@ footer {
         max-width: 50%;
     }
 }
+
