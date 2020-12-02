@@ -15,7 +15,7 @@ class RegistrationRoute extends Component {
   static contextType = UserContext;
 
   handleRegistrationSuccess = (username, password) => {
-    console.log(username, password)
+   
 
     AuthApiService.postLogin({
       username: username,
@@ -23,9 +23,9 @@ class RegistrationRoute extends Component {
     })
       .then(res => {
         this.context.processLogin(res.authToken)
-        // this.props.onLoginSuccess()
+        
 
-        console.log(this.props)
+       
         const { location, history } = this.props
 
 
@@ -36,14 +36,11 @@ class RegistrationRoute extends Component {
         console.log(res.error)
       })
 
-    //  history.push('/login')
+    
   }
 
 
-  // handleRegistrationSuccess = () => {
-  //   const { history } = this.props
-  //   history.push('/login')
-  // }
+  
 
   render() {
     return (
